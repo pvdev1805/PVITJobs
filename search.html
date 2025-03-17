@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - PV.ITJobs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#000071] py-[15px]">
+      <div class="container mx-auto px-4">
+        <!-- Wrapper -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-white font-[800] text-[20px] sm:text-[28px] flex-1 lg:flex-none"> PV.ITJobs </a>
+          <!-- End Logo -->
+
+          <!-- Menu -->
+          <nav class="hidden lg:block">
+            <ul class="flex gap-x-[30px]">
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Skill </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> ReactJS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> NodeJS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Javascript </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> CSS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> HTML </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Company </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> LG </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Amazon </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Microsoft </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Google </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Facebook </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Location </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Sydney </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Melbourne </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Brisbane </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Perth </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Adelaide </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="fotn-[600] text-[16px] text-white"> Top IT Companies </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Google </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Facebook </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Microsoft </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Amazon </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="fotn-[600] text-[16px] text-white"> Employers </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Sign In </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Sign Up </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Menu -->
+
+          <!-- Account -->
+          <div class="inline-flex items-center gap-x-[5px] font-[600] text-[12px] sm:text-[16px] text-white">
+            <a href="#" class=""> Sign In </a>
+            <span class="">/</span>
+            <a href="#" class=""> Sign Up </a>
+          </div>
+          <!-- End Account -->
+
+          <!-- Mobile Menu Button -->
+          <button class="text-white text-[20px] ml-3 inline-block lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-- End Mobile Menu Button -->
+        </div>
+        <!-- End Wrapper -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section 1 -->
+    <section class="section-1 bg-[#000065] py-[60px]">
+      <div class="container mx-auto px-4">
+        <h1 class="text-white text-[28px] font-[700] text-center mb-[30px]">887 IT Jobs in Australia</h1>
+
+        <form action="" class="flex flex-wrap gap-x-[15px] gap-y-3 mb-[30px]">
+          <select
+            class="bg-white w-full md:w-[240px] h-[56px] rounded-[4px] px-5 text-[16px] font-[500] text-[#121212]"
+          >
+            <option value="">All Cities</option>
+            <option value="">Sydney</option>
+            <option value="">Melbourne</option>
+            <option value="">Brisbane</option>
+            <option value="">Adelaide</option>
+            <option value="">Other</option>
+          </select>
+
+          <input
+            type="text"
+            placeholder="Enter keyword..."
+            class="flex-none md:flex-1 bg-white w-full h-[56px] rounded-[4px] px-5 text-[16px] font-[500] text-[#121212]"
+          />
+
+          <button
+            class="bg-[#0088ff] w-full md:w-[240px] h-[56px] rounded-[4px] text-white inline-flex items-center justify-center gap-[10px] text-[16px] font-[500]"
+          >
+            <i class="fa-solid fa-magnifying-glass text-[20px]"></i> Search
+          </button>
+        </form>
+
+        <div class="flex items-center flex-wrap gap-x-3 gap-y-[15px]">
+          <div class="text-[#dedede] text-[16px] font-[500]">People also search for:</div>
+
+          <div class="flex flex-wrap gap-[10px]">
+            <a
+              href="#"
+              class="border border-[#414042] bg-[#121212] hover:bg-[#414042] rounded-[20px] inline-block py-2 px-[22px] text-[16px] font-[500] text-[#dedede] hover:text-white"
+              >ReactJS</a
+            >
+            <a
+              href="#"
+              class="border border-[#414042] bg-[#121212] hover:bg-[#414042] rounded-[20px] inline-block py-2 px-[22px] text-[16px] font-[500] text-[#dedede] hover:text-white"
+              >JavaScript</a
+            >
+            <a
+              href="#"
+              class="border border-[#414042] bg-[#121212] hover:bg-[#414042] rounded-[20px] inline-block py-2 px-[22px] text-[16px] font-[500] text-[#dedede] hover:text-white"
+              >NodeJS</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section 1 -->
+
+    <!-- Search Results -->
+    <section class="search-results py-[60px]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-[#121212] text-[28px] font-[700] mb-[30px]">
+          76 Jobs found for <span class="text-[#0088ff]">reactjs</span>
+        </h2>
+
+        <div
+          class="bg-white rounded-lg py-[10px] px-[20px] mb-[30px] flex flex-wrap gap-3"
+          style="box-shadow: 0px 4px 20px 0px #0000000f"
+        >
+          <select
+            name=""
+            class="border border-[#dedede] rounded-[20px] h-[36px] px-[18px] text-[16px] font-[400] text-[#414042]"
+          >
+            <option value="">Level</option>
+            <option value="">Intern</option>
+            <option value="">Fresher</option>
+            <option value="">Junior</option>
+            <option value="">Middle</option>
+            <option value="">Senior</option>
+            <option value="">Manager</option>
+          </select>
+
+          <select
+            name=""
+            class="border border-[#dedede] rounded-[20px] h-[36px] px-[18px] text-[16px] font-[400] text-[#414042]"
+          >
+            <option value="">Work Model</option>
+            <option value="">Onsite</option>
+            <option value="">Remote</option>
+            <option value="">Hybrid</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-3 gap-5">
+          <!-- Job Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-[8px] flex flex-col relative truncate"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-0 left-0 w-full h-auto" />
+
+            <div
+              class="relative mt-5 w-[116px] h-[116px] bg-white mx-auto rounded-[8px] p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img
+                src="assets/images/company-LG.png"
+                alt="Frontend Developer (ReactJS)"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <h3
+              class="mt-5 mx-4 text-[18px] font-[700] text-[#121212] text-center flex-1 whitespace-normal line-clamp-2"
+            >
+              Frontend Developer (ReactJS)
+            </h3>
+            <div class="mt-[6px] text-center text-[14px] font-[400] text-[#121212]">LG Electronics Australia</div>
+            <div class="mt-[12px] text-center text-[16px] font-[600] text-[#0088ff]">$1,000 - $1,500</div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-user-tie text-[16px]"></i> Fresher
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-briefcase text-[16px]"></i> Onsite
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-location-dot text-[16px]"></i> Sydney
+            </div>
+
+            <div class="mt-3 mb-5 mx-4 flex flex-wrap justify-center gap-2">
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                JavaScript
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                ReactJS
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                NextJS
+              </div>
+            </div>
+          </a>
+          <!-- End Job Item -->
+
+          <!-- Job Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-[8px] flex flex-col relative truncate"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-0 left-0 w-full h-auto" />
+
+            <div
+              class="relative mt-5 w-[116px] h-[116px] bg-white mx-auto rounded-[8px] p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img
+                src="assets/images/company-amazon.png"
+                alt="Backend Developer (NodeJS)"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <h3
+              class="mt-5 mx-4 text-[18px] font-[700] text-[#121212] text-center flex-1 whitespace-normal line-clamp-2"
+            >
+              Backend Developer (NodeJS)
+            </h3>
+            <div class="mt-[6px] text-center text-[14px] font-[400] text-[#121212]">Amazon</div>
+            <div class="mt-[12px] text-center text-[16px] font-[600] text-[#0088ff]">$1,000 - $1,500</div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-user-tie text-[16px]"></i> Junior
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-briefcase text-[16px]"></i> Onsite
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-location-dot text-[16px]"></i> Melbourne
+            </div>
+
+            <div class="mt-3 mb-5 mx-4 flex flex-wrap justify-center gap-2">
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                JavaScript
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                NodeJS
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                NestJS
+              </div>
+            </div>
+          </a>
+          <!-- End Job Item -->
+
+          <!-- Job Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-[8px] flex flex-col relative truncate"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-0 left-0 w-full h-auto" />
+
+            <div
+              class="relative mt-5 w-[116px] h-[116px] bg-white mx-auto rounded-[8px] p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img
+                src="assets/images/company-microsoft.png"
+                alt="Fullstack Developer (MERN Stack)"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <h3
+              class="mt-5 mx-4 text-[18px] font-[700] text-[#121212] text-center flex-1 whitespace-normal line-clamp-2"
+            >
+              Fullstack Developer (MERN Stack)
+            </h3>
+            <div class="mt-[6px] text-center text-[14px] font-[400] text-[#121212]">Microsoft</div>
+            <div class="mt-[12px] text-center text-[16px] font-[600] text-[#0088ff]">$1,000 - $1,500</div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-user-tie text-[16px]"></i> Senior
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-briefcase text-[16px]"></i> Hybrid
+            </div>
+            <div class="mt-[6px] flex items-center justify-center gap-2 text-[14px] font-[400] text-[#121212]">
+              <i class="fa-solid fa-location-dot text-[16px]"></i> Brisbane
+            </div>
+
+            <div class="mt-3 mb-5 mx-4 flex flex-wrap justify-center gap-2">
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                JavaScript
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                ReactJS
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                NodeJS
+              </div>
+              <div
+                class="border border-[#dedede] rounded-[20px] py-[6px] px-[16px] text-[12px] font-[400] text-[#414042]"
+              >
+                NextJS
+              </div>
+            </div>
+          </a>
+          <!-- End Job Item -->
+        </div>
+
+        <div class="mt-[30px]">
+          <select
+            name=""
+            class="border border-[#dedede] rounded-[20px] h-[36px] px-[18px] text-[16px] font-[400] text-[#414042]"
+          >
+            <option value="">Page 1</option>
+            <option value="">Page 2</option>
+            <option value="">Page 3</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <!-- End Search Results -->
+
+    <!-- Footer -->
+    <footer class="footer bg-[#000065] py-6">
+      <div class="container mx-auto px-4">
+        <div class="text-white text-[28px] font-[800] text-center mb-[10px]">PV.ITJobs</div>
+        <div class="text-[#a6a6a6] text-[14px] font-[400] text-center">
+          Copyright © 2025 PV.ITJobs. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
