@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#000071] py-[15px]">
+      <div class="container mx-auto px-4">
+        <!-- Wrapper -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-white font-[800] text-[20px] sm:text-[28px] flex-1 lg:flex-none"> PV.ITJobs </a>
+          <!-- End Logo -->
+
+          <!-- Menu -->
+          <nav class="hidden lg:block">
+            <ul class="flex gap-x-[30px]">
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Skill </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> ReactJS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> NodeJS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Javascript </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> CSS </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> HTML </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Company </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> LG </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Amazon </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Microsoft </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Google </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Facebook </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li
+                    class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-2"
+                  >
+                    <a href="#" class="font-[600] text-[16px] text-white"> IT Jobs based on Location </a>
+                    <i class="fa-solid fa-angle-right text-white text-[16px]"></i>
+
+                    <ul class="absolute top-[0] left-[100%] w-[280px] bg-[#000065] hidden group-hover/sub-2:block">
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Sydney </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Melbourne </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Brisbane </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Perth </a>
+                      </li>
+
+                      <li
+                        class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096] relative group/sub-3"
+                      >
+                        <a href="#" class="font-[600] text-[16px] text-white"> Adelaide </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="fotn-[600] text-[16px] text-white"> Top IT Companies </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Google </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Facebook </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Microsoft </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Amazon </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="inline-flex items-center gap-x-[8px] relative group/sub-1">
+                <a href="#" class="fotn-[600] text-[16px] text-white"> Employers </a>
+                <i class="fa-solid fa-angle-down text-white text-[16px]"></i>
+
+                <ul class="absolute top-[100%] left-[0] w-[280px] bg-[#000065] hidden group-hover/sub-1:block">
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Sign In </a>
+                  </li>
+
+                  <li class="py-[10px] px-[16px] rounded-[4px] flex items-center justify-between hover:bg-[#000096]">
+                    <a href="#" class="font-[600] text-[16px] text-white"> Sign Up </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Menu -->
+
+          <!-- Account -->
+          <div class="inline-flex items-center gap-x-[5px] font-[600] text-[12px] sm:text-[16px] text-white">
+            <a href="#" class=""> Sign In </a>
+            <span class="">/</span>
+            <a href="#" class=""> Sign Up </a>
+          </div>
+          <!-- End Account -->
+
+          <!-- Mobile Menu Button -->
+          <button class="text-white text-[20px] ml-3 inline-block lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-- End Mobile Menu Button -->
+        </div>
+        <!-- End Wrapper -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section 2 -->
+    <section class="section-2 py-[60px]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-[24px] sm:text-[28px] font-[700] text-[#121212] text-center mb-[30px]">
+          Top IT Companies in Australia
+        </h2>
+
+        <!-- Wrapper -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-[10px] gap-y-[20px] sm:gap-5">
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-LG.png" alt="LG" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              LG Electronics Australia
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">New South Wales</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-amazon.png" alt="Amazon" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              Amazon
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">Victoria</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-google.png" alt="Google" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              Google
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">South Australia</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-microsoft.png" alt="Microsoft" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              Microsoft
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">Queensland</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-facebook.png" alt="Facebook" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              Facebook
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">Western Australia</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+
+          <!-- Item -->
+          <a
+            href="#"
+            class="border border-[#dedede] rounded-lg relative flex flex-col"
+            style="background: linear-gradient(180deg, #f6f6f6 2.38%, #ffffff 70.43%)"
+          >
+            <img src="assets/images/card-bg.svg" alt="Background" class="absolute top-[0] left-[0] w-full h-auto" />
+            <div
+              class="relative bg-white rounded-lg w-[125px] sm:w-[160px] h-[125px] sm:h-[160px] mt-5 sm:mt-[32px] mx-auto p-[10px]"
+              style="box-shadow: 0px 4px 24px 0px #0000001f"
+            >
+              <img src="assets/images/company-cba.png" alt="Commonwealth Bank" class="w-full h-full object-contain" />
+            </div>
+
+            <h3
+              class="my-4 sm:my-6 mx-2 sm:mx-4 text-[14px] sm:text-[18px] font-[700] text-[#121212] text-center flex-1 line-clamp-2"
+            >
+              Commonwealth Bank
+            </h3>
+
+            <div
+              class="bg-[#f7f7f7] flex items-center justify-center sm:justify-between py-3 px-[6px] sm:px-4 flex-wrap gap-y-3"
+            >
+              <div class="text-[12px] sm:text-[14px] font-[400] text-[#414042]">Northern Territory</div>
+
+              <div
+                class="inline-flex items-center gap-x-[6px] text-[12px] sm:text-[14px] font-[400] text-[#121212] w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-user-tie text-[16px] text-[#000096]"></i> 5 Jobs
+              </div>
+            </div>
+          </a>
+          <!-- End Item -->
+        </div>
+        <!-- End Wrapper -->
+      </div>
+    </section>
+    <!-- End Section 2 -->
+
+    <!-- Footer -->
+    <footer class="footer bg-[#000065] py-6">
+      <div class="container mx-auto px-4">
+        <div class="text-white text-[28px] font-[800] text-center mb-[10px]">PV.ITJobs</div>
+        <div class="text-[#a6a6a6] text-[14px] font-[400] text-center">
+          Copyright © 2025 PV.ITJobs. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
