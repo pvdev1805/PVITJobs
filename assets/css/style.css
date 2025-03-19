@@ -5,6 +5,7 @@
 }
 
 select,
-input {
+input,
+textarea {
   outline: none;
 }
